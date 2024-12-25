@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML LAYOUT </title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 25%;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  width: 50%;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+/* Style the footer */
+
+       
+    </style>
+</head>
+<body>
+    <h1>HTML LAYOUTS</h1>
+
+    <h2>CSS FLOAT LAYOUTS</h2>
+    <p> Html layout has several elements that defines the different parts of web page .</p>
+    <dl>
+        <dt>Header</dt>
+        <dd>--It defines the header of the web page or section</dd>
+        <dt>navigation (nav)</dt>
+        <dd>--nav defines the set of naviation links</dd>
+        <dt>section </dt>
+        <dd>--Section defines the section of the document</dd>
+        <dt>article</dt>
+        <dd>--Article deifnes an independent or self contained data </dd>
+        <dt>aside</dt>
+        <dd>--Defines the content aside of the content -like a slide bar</dd>
+        <dt>footer</dt>
+        <dd>Footer defines the footer of the document </dd>
+
+
+    </dd>
+    <header><h3>IOT Internet of things</h3></header>
+    <section>
+    <nav>
+        <ul>
+            <li><a href="https://www.arduino.cc/education/university" target="_blank">Arduino</a></li>
+            <li><a href="https://www.espressif.com/en/products/socs/esp8266" target="_blank">ESP 8266</a></li>
+            <li><a href="https://www.espressif.com/en/products/socs/esp32" target="_blank">ESP 32</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/STM32#:~:text=STM32%20is%20a%20family%20of,%2DM7%2C%20Cortex%2DM33." target="_blank">STM 32</a></li>
+            <li><a href="https://www.raspberrypi.com/software" target="_blank">RASPBERRY PI</a></li>
+        </ul>
+    </nav>
+    <article>
+        The iot is most useful and most emerging techonoly.<br>
+        The Internet of Things (IoT) is a fascinating and rapidly evolving field that connects physical devices to the internet, enabling them to collect and share data. These devices, often referred to as "smart objects," can range from simple home appliances like smart thermostats to complex industrial machinery and transportation systems<br>
+        IoT devices are embedded with sensors, software, and network connectivity, allowing them to communicate with each other and other internet-enabled devices. This creates a vast network of interconnected devices that can exchange data and perform various tasks autonomously<br>
+
+Some key applications of IoT include:
+</article>   
+<!--<aside>Smart Homes: Devices like smart lights, thermostats, and security systems that can be controlled remotely.
+
+    Healthcare: Wearable devices that monitor health metrics and send data to healthcare providers.
+    
+    Industrial IoT: Machines and processes in factories that are monitored and controlled to improve efficiency and reduce downtime.
+    
+    Agriculture: Sensors that monitor environmental conditions to optimize farming practices
+</aside> -->
+</section>
+
+ <footer>© copyrightto hima </footer>   
+</body>
+</html>

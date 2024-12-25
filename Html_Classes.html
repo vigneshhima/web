@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <style>
+            h2{
+                background-color: rgb(255, 204, 0);
+                width: auto;
+                color: blue;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                
+                text-align: left;
+            }
+            h1{
+                text-align: center;
+                font-style: italic;
+            }
+            h3{
+                color: rgb(65, 160, 243);
+
+            }
+            p{
+                
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .city{
+                width: 33%;
+                text-decoration: slateblue;
+                display: inline-block ;
+                color: rgb(11, 222, 32);
+            }
+            .imp{
+                color: brown;
+            }
+            .main{
+                
+                text-align: center;
+            }
+        </style>
+
+    </head>
+<title>
+    Html classes
+</title>
+<body>
+    <script>
+        function myfunction(){
+            var x=document.getElementsByClassName("city");
+            for (var i=0;i<x.length;i++){
+                x[i].style.display = "none";
+            }
+        }
+        
+    </script>
+    <h1>Html Classes</h1>
+   
+    <ol>
+        <li> <h3>Using class & span attribute</h3></li>
+        <li><h3>Multipile classes</h3></li>
+        <li><h3> Different Elements Can Share Same Class</h3></li>
+        <li><h3>Use of The class Attribute in JavaScript <button onclick="myfunction()">Hide</button></h3></li>
+    </ol>
+   
+    <div class="city main ">
+        <h2>Amaravathi </h2> 
+        <p>The capital of <span class="imp">Andhra Pradesh</span> </p>
+
+    </div>
+    <div class="city">
+        <h2>Hyderabad</h2>
+        <p class="city">The capital of <span class="imp">Telengana</span></p>
+    </div>
+    <div class="city">
+        <h2>Mysoor </h2>
+        <p>The city of <span class="imp">Karnataka</span></p>
+    </div>
+</body>
+
+</html>

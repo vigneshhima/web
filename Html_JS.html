@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html_java_Script</title>
+    <style>
+        div{
+            color: rgb(127, 148, 255);
+            background-color: antiquewhite;
+            height: auto;
+            width: 500px;
+            padding: 20px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: 400px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function myfun(){
+        document.getElementById("demo").innerHTML= "Hii there writing through the java script" ;
+        document.getElementById("demo").style.fontSize="25px";
+        document.getElementById("demo").style.color="red";
+        document.getElementById("demo").style.backgroundColor = "yellow";        
+
+    }
+    function bulb(sr){
+        var pic;
+        if(sr==0){
+            pic="bulboff.gif"
+        }
+        else{
+            pic="bulbon.gif"
+        }
+        document.getElementById('myimage').src=pic;
+
+    }
+    
+    </script>
+    <h1>JavaScript</h1>
+    <p>Here we are going to see some examples of java script<br>
+        JavaScript makes HTML pages more dynamic and interactive.<br>
+        
+    </p>
+    <button onclick="myfun()">click me!</button>
+    <p id="demo"> </p>
+    <h2>The HTML script> Tag </h2>
+    <p>The HTML script tag is used to define a client-side script (JavaScript).<br>
+        Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.<br>
+
+        To select an HTML element, JavaScript most often uses the document.getElementById() method.
+    </p>
+    <div>
+        <h2>My First JavaScript</h2>
+        <p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+        <img id="myimage" src="bulboff.gif" width="100" height="180">
+        <p>
+            <button onclick="bulb(1)">light on</button>
+            <button onclick="bulb(0)">light off</button>
+        </p>
+    </div>
+
+<h2>The HTML noscript> Tag</h2>
+    <p> The HTML noscript> tag defines an alternate content to be displayed to users that have disabled scripts in their browser or have a browser that doesn't support scripts:</p>
+
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+</body>
+</html>

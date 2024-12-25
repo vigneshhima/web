@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<hmtl>
+    <title>
+        Html id Attribute
+    </title>
+    <head>
+        <style>
+            #myHeader{
+                background-color: aquamarine;
+                text-align: center;
+                padding: 40px;
+                color: brown;
+
+            }
+            .city{
+                background-color: rgb(71, 92, 255);
+                text-align: center;
+                padding-inline: 40px;
+                color: rgb(236, 23, 236);
+                width: auto;
+                height: auto;
+            }
+            div.para{
+                background-color: rgb(94, 252, 59);
+                text-align: left;
+                padding-inline: 40px;
+                color: rgb(255, 5, 5);
+                width: auto;
+                height: auto;
+                font-family: 'Georgia', Times New Roman, Times, serif;
+            }
+            div.exptab th,tr,td {
+                background-color: aqua;
+                border: 1px salmon;
+                border-style: dashed;
+                border-color: black;
+                font-size: 32px;
+                font-style: italic;
+                font-family: 'Times New Roman', Times, serif;
+                
+                
+            }
+            div.exptab th{
+                text-align: center;
+            }
+            div.Chapters{
+                background-color: aliceblue;
+            }
+
+            div.scrjava {
+                color: rgb(245, 239, 244);
+              padding: 60px;
+              background-color: #252525;
+                font-size :32px;
+                font-family: Trebuchet MS, 'Lucida Sans Unicode', Lucida Grande, Lucida Sans, Arial, sans-serif;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Html_id_Attribute</h1>
+        <ol>
+            <li> Using The id Attribute </li>
+            <li> Difference Between Class and ID </li>
+            <li>HTML Bookmarks with ID and Links </li>
+            <li> Using The id Attribute in JavaScript </li>
+        </ol>
+        <div class="para">
+        <p>The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document.<br>
+
+            The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id.<br>
+            
+            The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}.<br>
+            
+            In the following example we have an element that points to the id name "myHeader". This element will be styled according to the #myHeader style definition in the head section:
+
+        </p><br>
+            
+         <h1 id="myHeader"> my id element</h1> 
+         <!-- Multiple elements with same class -->
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>      
+</div>  
+
+<div class="exptab">
+    <table style="width: 50%;
+                height: auto;">
+        <caption>Index</caption>
+        <tr>
+            <th>S.NO</th>
+            <th>CHAPTER</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td><a href="#c1">Chapter 1</a></td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td><a href="#c2">Chapter 2</a></td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td><a href="#c3">Chapter 3</a></td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td><a href="#c4">Chapter 4</a></td>
+        </tr>
+        <tr>
+            <td>05</td>
+            <td><a href="#c5">Chapter 5</a></td>
+        </tr>
+        <tr>
+            <td>06</td>
+            <td><a href="#c6">Chapter 6</a></td>
+        </tr>
+        <tr>
+            <td>07</td>
+            <td><a href="#c7">Chapter 7</a></td>
+        </tr>
+        <tr>
+            <td>08</td>
+            <td><a href="#c8">Chapter 8</a></td>
+        </tr>
+        <tr>
+            <td>09</td>
+            <td><a href="#c9">Chapter 9</a></td>
+        </tr>
+    </table>
+    
+</div>
+<div class="Chapters">
+    <h2 id="c1">Chapter 1</h2>
+    <p>This chapter contains some thing about SDSC</p>
+
+    <h2 id="c2">chapter 2</h2>
+    <p>This chapter contains some thing about ISRO</p>
+
+    <h2 id="c3">Chapter 3</h2>
+    <p> This Chapter conatins some thing about Chandrayan 1</p>
+
+    <h2 id="c4">Chapter 4</h2>
+    <p> This chapter conatins some thing about Chandrayan 2</p>
+
+    <h2 id="c5">Chapter 5</h2>
+    <p> This chapter contains some thing about Chandrayan 3</p>
+
+    <h2 id="c6">Chapter 6</h2>
+    <p>This chapter conatins some thing about Gaganyan </p>
+
+    <h2 id="c7">Chapter 7</h2>
+    <p> This chapter conatins some thing about Aditya-L1 </p>
+
+    <h2 id="c8">Chapter 8</h2>
+    <p> This chapter conains some thong about Chandrayan 4</p>
+
+    <h2 id="c9">All about ISRO</h2>
+    <p>This explains all things in the isro projects</p>
+</div> 
+<div class="scrjava">
+    
+    <h2>Using The id Attribute in JavaScript</h2>
+    <p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+    <h2 id="Change">To change the content <button onclick="mycontent()">Change</button></h2>
+</div>
+<script>
+    function mycontent(){
+        document.getElementById("Change").innerHTML="Hello javaian ";
+
+    }
+</script>
+ </body>
+</hmtl>
